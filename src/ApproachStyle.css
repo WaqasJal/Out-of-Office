@@ -1,4 +1,4 @@
-/* approachStyle.css */
+/* approachStyles.css */
 
 /* Example CSS for Approach.jsx */
 .container {
@@ -6,7 +6,19 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #8d3838;
+    background-color: #f0f0f0;
+
+    .heading {
+      font-size: 24px;
+      margin-bottom: 10px; /* Add margin to create space between h1 and p */
+    }
+    
+    .paragraph {
+      font-size: 18px;
+    }
+
   }
+
+
   
   /* Define other styles as needed */
