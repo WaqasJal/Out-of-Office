@@ -1,29 +1,39 @@
 // Home.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../src/images/OOOLogo.svg';
-import backgroundImages from '../src/images/Work.png'
 import RotatingBackground from './RotatingBackground';
 
 const Home = () => {
-  const backgroundImages = [
-    '/images/Work.png',
-    '/images/Services.png',
-    '/images/Approach.png',
-  ];
+  const sections = ['work', 'services', 'approach'];
+  const sectionImages = {
+    work: '/images/Work.png',
+    services: '/images/Services.png',
+    approach: '/images/Approach.png',
+  };
+
+  const [activeSection, setActiveSection] = useState('work');
+
+  const handleSectionChange = () => {
+    const currentIndex = sections.indexOf(activeSection);
+    const nextIndex = (currentIndex + 1) % sections.length;
+    setActiveSection(sections[nextIndex]);
+  };
 
   return (
-    <RotatingBackground backgroundImages={backgroundImages}>
-      <div>
-        <img src={logo} alt="Company Logo" className="logo" />
-        <h1>Welcome to the Home Page</h1>
-        <nav>
-          <Link to="/work">work</Link>
-          <Link to="/services">services</Link>
-          <Link to="/approach">approach</Link>
-        </nav>
-      </div>
-    </RotatingBackground>
+    <div className="home">
+      <RotatingBackground backgroundImages={[sectionImages[activeSection]]} onRotate={handleSectionChange}>
+        <div>
+          <img src={logo} alt="Company Logo" className="logo" />
+          <h1>Welcome to the {activeSection} Section</h1>
+          <nav>
+            <Link to={`/${activeSection.toLowerCase()}`}>
+              <button>Go to {sections[(sections.indexOf(activeSection) + 1) % sections.length]}</button>
+            </Link>
+          </nav>
+        </div>
+      </RotatingBackground>
+    </div>
   );
 };
 
