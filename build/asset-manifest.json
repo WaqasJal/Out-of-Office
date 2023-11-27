@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6132a764.css",
-    "main.js": "/static/js/main.c307e15e.js",
-    "static/js/787.87f743f7.chunk.js": "/static/js/787.87f743f7.chunk.js",
-    "static/media/Work.png": "/static/media/Work.cafc7872d8f22c82aeef.png",
-    "static/media/OOOLogo.svg": "/static/media/OOOLogo.afe4a1c4a9157216c2aa8fee41e10c9d.svg",
-    "index.html": "/index.html",
-    "main.6132a764.css.map": "/static/css/main.6132a764.css.map",
-    "main.c307e15e.js.map": "/static/js/main.c307e15e.js.map",
-    "787.87f743f7.chunk.js.map": "/static/js/787.87f743f7.chunk.js.map"
+    "main.css": "/out-of-office-website/static/css/main.6132a764.css",
+    "main.js": "/out-of-office-website/static/js/main.8f774ca2.js",
+    "static/js/787.87f743f7.chunk.js": "/out-of-office-website/static/js/787.87f743f7.chunk.js",
+    "static/media/Work.png": "/out-of-office-website/static/media/Work.cafc7872d8f22c82aeef.png",
+    "static/media/OOOLogo.svg": "/out-of-office-website/static/media/OOOLogo.afe4a1c4a9157216c2aa8fee41e10c9d.svg",
+    "index.html": "/out-of-office-website/index.html",
+    "main.6132a764.css.map": "/out-of-office-website/static/css/main.6132a764.css.map",
+    "main.8f774ca2.js.map": "/out-of-office-website/static/js/main.8f774ca2.js.map",
+    "787.87f743f7.chunk.js.map": "/out-of-office-website/static/js/787.87f743f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6132a764.css",
-    "static/js/main.c307e15e.js"
+    "static/js/main.8f774ca2.js"
   ]
 }
