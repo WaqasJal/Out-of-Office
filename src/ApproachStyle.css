@@ -1,0 +1,12 @@
+/* approachStyle.css */
+
+/* Example CSS for Approach.jsx */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8d3838;
+  }
+  
+  /* Define other styles as needed */

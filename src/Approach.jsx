@@ -1,9 +1,17 @@
 // Approach.js
-import React from 'react';
+import React, {useState, Text, StyleSheet} from 'react';
+import './ApproachStyle.css'; // Import the CSS file
 
-const Approach = () => {
-    
-  return <h1>Approach Test</h1>;
+
+
+function Approach  ()  {
+  return (
+    <div className="container">
+      {/* Content of your Approach component */}
+      <h1>Approach Page</h1>
+      <p>This is the content of the Approach page.</p>
+    </div>
+  );
 };
 
 
