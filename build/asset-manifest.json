@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6132a764.css",
+    "main.js": "/static/js/main.c307e15e.js",
+    "static/js/787.87f743f7.chunk.js": "/static/js/787.87f743f7.chunk.js",
+    "static/media/Work.png": "/static/media/Work.cafc7872d8f22c82aeef.png",
+    "static/media/OOOLogo.svg": "/static/media/OOOLogo.afe4a1c4a9157216c2aa8fee41e10c9d.svg",
+    "index.html": "/index.html",
+    "main.6132a764.css.map": "/static/css/main.6132a764.css.map",
+    "main.c307e15e.js.map": "/static/js/main.c307e15e.js.map",
+    "787.87f743f7.chunk.js.map": "/static/js/787.87f743f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6132a764.css",
+    "static/js/main.c307e15e.js"
+  ]
+}
