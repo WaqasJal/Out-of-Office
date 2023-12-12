@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Services from './Services';
+import RotateBackground from './RotateBackground';
 
 const Home = () => {
     const envelopeUrl = 'https://i.gyazo.com/3026017ee3360fed38839cbdeae666cb.png';
@@ -52,7 +52,7 @@ const Home = () => {
 
         
 
-            <Services onRotateClick={handleServicesClick} />
+            <RotateBackground onRotateClick={handleServicesClick} />
 
             {/* Bottom left text */}
             <div className="fixed bottom-0 left-0 p-4">

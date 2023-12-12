@@ -6,6 +6,7 @@ import Work from './Work';
 import Services from './Services';
 import Approach from './Approach';
 import Navigation from './Navigation';
+import { ContactUs } from './ContactUs';
 import './App.css'; // Import your global CSS file
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/work" element={<Work />} />
           <Route path="/services" element={<Services />} />
           <Route path="/approach" element={<Approach/>} />
+          <Route path="/contactus" element={<ContactUs/>} />
         </Routes>
         <Navigation />
       </div>
