@@ -8,17 +8,17 @@ const Work = () => {
    
     {/* Include the Approach component */}
     <VideoBackground 
-    title="C O R P O R A T E"
+    title="CORPORATE"
     description="Brands that inspire people to act."
     />
     {/* You can include multiple instances of the Approach component if needed */}
     <VideoBackground 
-    title="S O C I A L  G O O D"
+    title="SOCIAL GOOD"
     description="Helping you close the trust gap."
     />
 
     <VideoBackground 
-    title="P E R S O N A L I T I E S"
+    title="PERSONALITIES"
     description="Elevating your greatness."
     />
     
