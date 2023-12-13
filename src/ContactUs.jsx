@@ -72,7 +72,19 @@ export const ContactUs = () => {
                         onChange={handleChange}
                         placeholder="Message"
                     />
-                    <button type="submit">Submit</button>
+                    <button
+    style={{
+        color: 'white',
+        fontSize: '0.75rem', // equivalent to text-xs
+        fontWeight: 'bold',
+        textTransform: 'uppercase',
+        fontFamily: 'Inter, sans-serif',
+        letterSpacing: '0.177em', // equivalent to tracking-[7.08px]
+    }}
+    type="submit"
+>
+    Submit
+</button>
                 </form>
                 <img
                     className="!fixed !left-0 !top-[941px]"
