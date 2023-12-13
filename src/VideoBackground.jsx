@@ -16,11 +16,11 @@ function VideoBackground  ({title,description})  {
 
       <div className="absolute flex flex-col justify-center-left items-center-left top-48 left-8">
 
-        <h1 className="text-white font-bold text-2xl mt-20 mb-4 border-2 border-indigo-500/100 px-4 py-2">
+        <h1 className="text-white font-bold text-2xl mt-20 mb-4 border-2 border-indigo-500/100 px-4 py-2 w-[567px] text-white text-[19px] font-bold font-['Inter'] uppercase tracking-[11.21px]">
           {title}
         </h1>
 
-        <p className="text-white text-opacity-75 text-4xl border-2 border-indigo-500/100 px-4 py-2">
+        <p className="text-white text-opacity-75 text-4xl border-2 border-indigo-500/100 px-4 py-2 w-[567px] text-white text-5xl font-thin font-['Inter']">
           {description}
         </p>
 
