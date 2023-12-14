@@ -6,7 +6,7 @@ const RotateBackground = ({ onRotateClick }) => {
 
     const handleRotateClick = () => {
         // Rotate by 120 degrees on each click
-        setRotation(rotation + 120);
+        setRotation(rotation - 120);
         // Call the onRotateClick prop
         onRotateClick();
     };
@@ -22,13 +22,14 @@ const RotateBackground = ({ onRotateClick }) => {
     }, []);
 
     return (
-        <div className=" relative w-[1920px] h-[1080px] bg-neutral-900">
+        <div className="relative w-[1920px] h-[1080px] bg-neutral-900">
 
-            <div className='grayscale'>
+            <div>
 
                 <motion.div
                     style={{ originX: 0.4071, originY: 0.4 }}
                     className="w-[2999px] h-full translate-x-[-500px] top-[0px]"
+                    initial={{ rotate: 0, translateX: 0 }}
                     animate={{ rotate: rotation, translateX: -255 }}
                     onClick={handleRotateClick}
                     transition={{ duration: 0.25 }}
@@ -40,18 +41,6 @@ const RotateBackground = ({ onRotateClick }) => {
                     />
                 </motion.div>
             </div>
-            {/* Right triangle at the bottom left with a 30-degree angle */}
-            {/* <svg
-    className="absolute -bottom-5 left-0 w-4/6 h-5/6"
-    style={{ transform: 'rotate(0deg)' }}
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="-50 -50 200 200" // Increase the viewBox size
-    preserveAspectRatio="none"
->
-    <polygon points="0,100 100,100 0,0" fill="#040A0DF2" />
-</svg> */}
-
-
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import RotateBackground from "./RotateBackground";
 
 const Home = () => {
@@ -13,11 +14,11 @@ const Home = () => {
   const labels = ["WORK", "SERVICES", "APPROACH"];
   const additionalTexts = [
     // Text for WORK
-    "Elevating brands; through the power of video, with stories that inspire.",
+    "Elevating brands; through the power <br/>of video, with stories that inspire.",
     // Text for SERVICES
-    "We help shape how you’re perceived; expressing who you are, why you’re different, and why people should care",
+    "We help shape how you’re perceived; expressing who you are, why you’re<br/> different, and why people should care through the power of story.",
     // Text for APPROACH
-    "We initiate an immersive discovery process, understand your needs, and develop the right strategy to drive your brand forward.",
+    "We initiate an immersive discovery process, understand your needs, <br/>and develop the right strategy to drive your brand forward.",
   ];
 
   const [additionalTextIndex, setAdditionalTextIndex] = useState(0);
@@ -65,12 +66,15 @@ const Home = () => {
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/8">
         <div className="relative w-[282px] h-[282px] bg-[#040a0d] rounded-[197px] overflow-hidden flex items-center justify-center relative">
           {/* Logo */}
-          <img
-            className="w-[222px] h-[222px] transform"
-            alt="A"
-            src="https://i.gyazo.com/21c930ac73c8b1430c2a8dde2ed6b0df.png"
-          />
+          <div className="flex items-center justify-center w-[222px] h-[222px] transform">
+            <img
+              className="w-full h-full"
+              alt="A"
+              src="https://i.gyazo.com/21c930ac73c8b1430c2a8dde2ed6b0df.png"
+            />
+          </div>
 
+          {/* Text with animations */}
           {/* Text with animations */}
           <AnimatePresence mode="wait">
             <motion.div
@@ -80,20 +84,43 @@ const Home = () => {
               exit={{ x: "-100%" }}
               transition={{ ease: "easeOut", duration: rotationDuration }}
               onComplete={handleServicesClick} // Trigger the next rotation
-              className="absolute transform -translate-x-1/8 -translate-y-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
             >
-              <div className="relative w-[122px] h-[32px] font-NAV text-white text-[length:var(--NAV-font-size)] text-center tracking-[var(--NAV-letter-spacing)] leading-[var(--NAV-line-height)] [font-style:var(--NAV-font-style)]">
+              {/* Use Link component for navigation */}
+              <Link
+                to={`/${labels[index].toLowerCase()}`} // Replace with the actual paths
+                style={{
+                  color: "white",
+                  fontSize: 12,
+                  fontFamily: "Inter",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: 7.08,
+                  textDecoration: "none", // Remove default underline style
+                }}
+                className="relative w-[122px] h-[32px] font-NAV text-white text-[length:var(--NAV-font-size)] text-center tracking-[var(--NAV-letter-spacing)] leading-[var(--NAV-line-height)] [font-style:var(--NAV-font-style)]"
+              >
                 {labels[index]}
-              </div>
+              </Link>
             </motion.div>
           </AnimatePresence>
         </div>
       </div>
 
-      {/* Text box on the right side of the circle with the logo */}
       <div className="absolute left-[50%] translate-x-[100px] top-[50%] translate-y-[215px] p-16">
-        <div className="max-w-[600px]  rounded-lg p-4">
-          <p className="text-white">{additionalTexts[additionalTextIndex]}</p>
+        <div className="max-w-[800px] rounded-lg p-4">
+          <p
+            style={{
+              color: "white",
+              fontSize: 20,
+              fontFamily: "Inter",
+              fontWeight: 200,
+              wordWrap: "break-word",
+            }}
+            dangerouslySetInnerHTML={{
+              __html: additionalTexts[additionalTextIndex],
+            }}
+          />
         </div>
       </div>
 
