@@ -4,7 +4,7 @@ import VideoBackground from './VideoBackground';
 
 const Approach = () => {
   return (
-    <div>
+    <div >
    
     {/* Include the Approach component */}
     <VideoBackground 
