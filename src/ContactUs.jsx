@@ -30,9 +30,9 @@ export const ContactUs = () => {
     return (
         <div className="bg-[#0d1418] flex flex-row justify-center w-full">
             <div className="bg-[#0d1418] w-[1920px] h-[1080px] relative">
-            <p className="absolute w-[693px] top-[232px] left-[56px] text-white text-5xl font-thin font-Inter">
-    Gorem ipsum dolor sit amet, consectetur adipiscing elit.
-</p>
+                <p className="absolute w-[693px] top-[232px] left-[56px] text-white text-5xl font-thin font-Inter">
+                    Gorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
                 <img
                     className="absolute w-[80px] h-[80px] top-[74px] left-[46px]"
                     alt="Ooo"
@@ -47,7 +47,7 @@ export const ContactUs = () => {
                             value={formData.firstName}
                             onChange={handleChange}
                             placeholder="First Name"
-                            className="border-none border-b border-white absolute left-0 right-0"
+                            className="border-none border-b border-white text-white bg-transparent focus:border-none focus:outline-none focus:ring-0 absolute left-0 right-0 top-[80px]"
                         />
                     </div>
                     <div className="w-[402px] relative">
@@ -58,7 +58,7 @@ export const ContactUs = () => {
                             value={formData.lastName}
                             onChange={handleChange}
                             placeholder="Last Name"
-                            className="border-none border-b border-white absolute left-0 right-0"
+                            className="border-none border-b border-white text-white bg-transparent focus:border-none focus:outline-none focus:ring-0 absolute left-0 right-0 top-[80px]"
                         />
                     </div>
                     <div className="w-[804px] relative">
@@ -69,21 +69,23 @@ export const ContactUs = () => {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="Email"
-                            className="border-none border-b border-white absolute left-0 right-0"
+                            className="border-none border-b border-white text-white bg-transparent focus:border-none focus:outline-none focus:ring-0 absolute left-0 right-0 top-[80px]"
                         />
                     </div>
-                    <div className="h-[263px] w-[804px] relative">
-                        <Frame text="M E S S A G E" />
-                        <textarea
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            placeholder="Message"
-                            className="border-none border-b border-white absolute left-0 right-0"
-                        />
-                    </div>
+                    <div className="w-[804px] relative">
+    <Frame text="M E S S A G E" />
+    <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Message"
+        rows="5"
+        className="border-none border-b border-white text-white bg-transparent focus:border-none focus:outline-none focus:ring-0 absolute left-0 right-0 top-[80px] w-full"
+        style={{ width: '100%' }}
+    />
+</div>
                 </div>
-                <form onSubmit={handleSubmit} className="absolute top-[691px] left-[1699px]">
+                <form onSubmit={handleSubmit} className="absolute top-[791px] left-[1699px]">
                     <button
                         style={{
                             color: 'white',
