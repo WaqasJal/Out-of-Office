@@ -9,7 +9,7 @@ import Mainvideo from "./Mainvideo";
 const titleStyle = {
   fontFamily: 'Tahoma  , sans-serif',
   fontSize: '200px',
-  color: '#e2dccb',
+  color: '#ffffff',
   textAlign: 'center',
   fontWeight: 'bold',
   position: 'absolute',
@@ -18,7 +18,7 @@ const titleStyle = {
   transform: 'translate(-50%, -50%)',
   width: '100%',
   mixBlendMode: 'difference', // Use mix-blend-mode to invert the text color based on the background
-  filter: 'invert(0%)',
+  filter: 'invert(30%)',
 };
 
 const Home = () => {

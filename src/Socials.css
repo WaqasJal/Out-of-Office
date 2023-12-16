@@ -11,8 +11,8 @@
   display: flex;
   justify-content: flex-end; /* Adjust to move it to the right */
   align-items: center;
-  mix-blend-mode: difference;
-  filter: invert(50%);
+  mix-blend-mode: screen;
+  filter: invert(90%);
   font-family: 'Tahoma', 'sans-serif';
   letter-spacing: 2px;
   transition: transform 0.3s ease; /* Add a smooth transition */
