@@ -12,9 +12,11 @@ import Navigation from './Navigation';
 import { ContactUs } from './ContactUs';
 import logo from './images/Services.jpg';
 import './App.css'; // Import your global CSS file
+import Scrollbar from './Scrollbar';
 
 const App = () => {
   return (
+    
     <Router>
       
       <Navigation />

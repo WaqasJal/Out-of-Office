@@ -7,6 +7,7 @@ const Navigation = () => {
   return (
     <nav className="top-nav">
       <ul>
+        <li><Link smooth to="#home">HOME</Link></li>
         <li><Link smooth to="#service">SERVICES</Link></li>
         <li><Link smooth to="#approach">APPROACH</Link></li>
         <li><Link smooth to="#work">WORK</Link></li>
