@@ -13,7 +13,7 @@ function VideoBackground({ title, description }) {
   return (
     <div className="bg-custom-background-color relative w-full h-screen navbar scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-500">
       <video
-        className="absolute w-full h-screen inset-0 object-cover opacity-10"
+        className="absolute w-full h-screen inset-0 object-cover opacity-90"
         autoPlay
         loop
         muted

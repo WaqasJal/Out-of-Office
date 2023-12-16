@@ -3,7 +3,7 @@ import React, { useState, Text, StyleSheet } from "react";
 //import './ApproachStyle.css'; // Import the CSS file
 //import tailwind from 'tailwind';
 import { motion } from "framer-motion";
-
+import "./Mainvideo.css"
 
 import mainv from "../src/videos/video.mp4";
 import { Link } from "react-router-dom";
@@ -15,6 +15,7 @@ const Mainvideo = () => {
       <video className="absolute w-full h-screen inset-0 object-cover opacity-100" autoPlay loop muted>
         <source src={mainv} type="video/mp4" />
       </video>
+      <div className="gradient-mask"></div>
       <div>
         <div className="p-4">
           <Link to="/">

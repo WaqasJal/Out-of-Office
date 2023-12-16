@@ -4,25 +4,12 @@ import VideoBackground from './VideoBackground';
 
 const Work = () => {
   return (
-    <div>
-   
-    {/* Include the Approach component */}
+    <section className='App-header' id='work'>
     <VideoBackground 
-    title="CORPORATE"
-    description="Brands that inspire people to act."
+    title="WORK"
+    description="i, aliquam convallis turpis. Nunc et sem tempus, hendrerit arcu in, laoreet risus. Morbi ut metus tristique, venenatis ante ut, rhoncus diam. Ut consequat lacinia ante, ut efficitur felis scelerisque id. Fusce egestas leo sit amet viverra malesuada. Mauris suscipit vulputate massa, in viverra lect"
     />
-    {/* You can include multiple instances of the Approach component if needed */}
-    <VideoBackground 
-    title="SOCIAL GOOD"
-    description="Helping you close the trust gap."
-    />
-
-    <VideoBackground 
-    title="PERSONALITIES"
-    description="Elevating your greatness."
-    />
-    
-  </div>
+    </section>
 
 
 

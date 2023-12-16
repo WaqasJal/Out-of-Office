@@ -5,16 +5,17 @@
   left: 0;
   width: 100%;
   padding: 0%;
-  color: #ff3c01;
+  color: #000000;
   text-align: center;
-  z-index: 1000;
+  z-index: 3000;
   display: flex;
   justify-content: space-around; /* Adjust as needed */
   align-items: center;
   mix-blend-mode: difference;
-  filter: invert(100%);
+  filter: invert(50%);
   font-Family: 'Tahoma' , 'sans-serif';
-
+  letter-spacing: 2px;
+transition: transform 0.3s ease; /* Add a smooth transition */
 }
 
 .top-nav ul {
@@ -22,30 +23,23 @@
   margin: 0;
   padding: 0;
   display: flex;
-  
 }
 
 .top-nav ul li {
   font-size: 20px;
- 
 }
 
 .top-nav ul li a:hover {
   background-color: #ffffff00;
-  color: #787777;
+  color: #ffffff;
 }
 
 .top-nav ul li a {
   border: none !important;
-  
-
-  
-  
-  
 }
 
 .top-nav ul li:not(:last-child) {
-  margin-right: 200px;
+  margin-right: 160px;
 }
 
 

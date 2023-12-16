@@ -1,0 +1,48 @@
+/* Nav.css */
+.socials {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; /* Updated to right */
+  width: 100%;
+  padding: 0%;
+  color: #e40707;
+  text-align: center;
+  z-index: 3000;
+  display: flex;
+  justify-content: flex-end; /* Adjust to move it to the right */
+  align-items: center;
+  mix-blend-mode: difference;
+  filter: invert(50%);
+  font-family: 'Tahoma', 'sans-serif';
+  letter-spacing: 2px;
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.socials.sticky {
+  position: fixed;
+}
+
+.socials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.socials ul li {
+  font-size: 20px;
+  
+}
+
+.socials ul li a:hover {
+  background-color: #ffffff00;
+  color: #ffffff;
+}
+
+.socials ul li a {
+  border: none !important;
+}
+
+.socials ul li:not(:last-child) {
+  margin-right: 16px;
+}
