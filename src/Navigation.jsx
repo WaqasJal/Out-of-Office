@@ -1,22 +1,18 @@
-// Navigation.js
+// Nav.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../src/images/OOOLogo.svg';
-import './Navigation.css'; // Import your CSS file
+import './Navigation.css';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Navigation = () => {
   return (
-    <div className="navigation">
-      <Link to="/" className="logo-link">
-        <img src={logo} alt="Company Logo" className="logo" />
-      </Link>
-      <div className="nav-links">
-        <Link to="/work">Work</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/approach">Approach</Link> 
-        
-      </div>
-    </div>
+    <nav className="top-nav">
+      <ul>
+        <li><Link smooth to="#service">SERVICES</Link></li>
+        <li><Link smooth to="#section2">APPROACH</Link></li>
+        <li><Link smooth to="#section3">WORK</Link></li>
+      </ul>
+    </nav>
   );
 };
 

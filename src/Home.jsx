@@ -2,144 +2,35 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import RotateBackground from "./RotateBackground";
+import Navigation from "./Navigation";
+import Mainvideo from "./Mainvideo";
+
+
+const titleStyle = {
+  fontFamily: 'Tahoma  , sans-serif',
+  fontSize: '200px',
+  color: '#e2dccb',
+  textAlign: 'center',
+  fontWeight: 'bold',
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '100%',
+  mixBlendMode: 'difference', // Use mix-blend-mode to invert the text color based on the background
+  filter: 'invert(0%)',
+};
 
 const Home = () => {
-  const envelopeUrl =
-    "https://i.gyazo.com/3026017ee3360fed38839cbdeae666cb.png";
-  const deviceMobileUrl =
-    "https://i.gyazo.com/43413e0f3483477e43a560fab4bd7984.png";
-  const instagramLogoUrl =
-    "https://i.gyazo.com/4ac32b19416a2e0be19f1873324801e0.png";
-
-  const labels = ["WORK", "SERVICES", "APPROACH"];
-  const additionalTexts = [
-    // Text for WORK
-    "Elevating brands; through the power <br/>of video, with stories that inspire.",
-    // Text for SERVICES
-    "We help shape how you’re perceived; expressing who you are, why you’re<br/> different, and why people should care through the power of story.",
-    // Text for APPROACH
-    "We initiate an immersive discovery process, understand your needs, <br/>and develop the right strategy to drive your brand forward.",
-  ];
-
-  const [additionalTextIndex, setAdditionalTextIndex] = useState(0);
-  const [index, setIndex] = useState(0);
-  const [rotationDuration, setRotationDuration] = useState(0.1); // Adjust the rotation duration as needed
-
-  const handleServicesClick = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % labels.length);
-  };
-
-  useEffect(() => {
-    // Update rotation duration and additional text index when index changes
-    switch (index) {
-      case 0:
-        setRotationDuration(0.1);
-        setAdditionalTextIndex(0);
-        break;
-      case 1:
-        setRotationDuration(0.1); // Adjust the duration for SERVICES
-        setAdditionalTextIndex(1);
-        break;
-      case 2:
-        setRotationDuration(0.1);
-        setAdditionalTextIndex(2);
-        break;
-      default:
-        setRotationDuration(0.1);
-        setAdditionalTextIndex(0);
-        break;
-    }
-  }, [index]);
-
   return (
-    <div className="relative bg-[#0d1418] flex flex-col justify-center items-center w-full h-screen">
-      <RotateBackground onRotateClick={handleServicesClick} />
-
-      {/* Bottom left text */}
-      <div className="fixed bottom-0 left-0 p-4">
-        <div className="relative w-fit mt-[-1.00px] font-normal text-white text-24 tracking-0 leading-normal">
-          OUT OF OFFICE ™
+    <section className='App-header' id='home'>
+      <>
+        <Mainvideo />
+        <div style={titleStyle}>
+          OUT OF OFFICE&trade;
         </div>
-      </div>
-
-      {/* Bottom middle content */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/8">
-        <div className="relative w-[282px] h-[282px] bg-[#040a0d] rounded-[197px] overflow-hidden flex items-center justify-center relative">
-          {/* Logo */}
-          <div className="flex items-center justify-center w-[222px] h-[222px] transform">
-            <img
-              className="w-full h-full"
-              alt="A"
-              src="https://i.gyazo.com/21c930ac73c8b1430c2a8dde2ed6b0df.png"
-            />
-          </div>
-
-          {/* Text with animations */}
-          {/* Text with animations */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={labels[index]}
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100%" }}
-              transition={{ ease: "easeOut", duration: rotationDuration }}
-              onComplete={handleServicesClick} // Trigger the next rotation
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-            >
-              {/* Use Link component for navigation */}
-              <Link
-                to={`/${labels[index].toLowerCase()}`} // Replace with the actual paths
-                style={{
-                  color: "white",
-                  fontSize: 12,
-                  fontFamily: "Inter",
-                  fontWeight: 700,
-                  textTransform: "uppercase",
-                  letterSpacing: 7.08,
-                  textDecoration: "none", // Remove default underline style
-                }}
-                className="relative w-[122px] h-[32px] font-NAV text-white text-[length:var(--NAV-font-size)] text-center tracking-[var(--NAV-letter-spacing)] leading-[var(--NAV-line-height)] [font-style:var(--NAV-font-style)]"
-              >
-                {labels[index]}
-              </Link>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
-
-      <div className="absolute left-[50%] translate-x-[100px] top-[50%] translate-y-[215px] p-16">
-        <div className="max-w-[800px] rounded-lg p-4">
-          <p
-            style={{
-              color: "white",
-              fontSize: 20,
-              fontFamily: "Inter",
-              fontWeight: 200,
-              wordWrap: "break-word",
-            }}
-            dangerouslySetInnerHTML={{
-              __html: additionalTexts[additionalTextIndex],
-            }}
-          />
-        </div>
-      </div>
-
-      {/* Bottom right icons */}
-      <div className="fixed bottom-0 right-0 p-4">
-        <div className="inline-flex items-center justify-end gap-[18px] relative">
-          {[envelopeUrl, deviceMobileUrl, instagramLogoUrl].map(
-            (url, index) => (
-              <img
-                key={index}
-                className="w-[24px] h-[24px]"
-                alt={`Icon ${index + 1}`}
-                src={url}
-              />
-            )
-          )}
-        </div>
-      </div>
-    </div>
+      </>
+    </section>
   );
 };
 

@@ -6,6 +6,7 @@ import VideoBackground from './VideoBackground';
 
 const Services = () => {
   return (
+    <section className='App-header' id='service'>
     <div>
   
     {/* Include the Approach component */}
@@ -23,7 +24,7 @@ const Services = () => {
     />
     
   </div>
-
+  </section>
 
   );
 
