@@ -1,16 +1,16 @@
 // Navigation.js
 import React from 'react';
 import './Navigation.css';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 import Socials from './Socials';
 const Navigation = () => {
   return (
     <nav className="top-nav">
       <ul>
-        <li><Link smooth to="#home">HOME</Link></li>
-        <li><Link smooth to="#service">SERVICES</Link></li>
-        <li><Link smooth to="#approach">APPROACH</Link></li>
-        <li><Link smooth to="#work">WORK</Link></li>
+        <li><Link to={`/`}>{"HOME"}</Link></li>
+        <li><Link to={`/services`}>{"SERVICES"}</Link></li>
+        <li><Link to={`/approach`}>{"APPROACH"}</Link></li>
+        <li><Link to={`/work`}>{"WORK"}</Link></li>
         
       </ul>
       

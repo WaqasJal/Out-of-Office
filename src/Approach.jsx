@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Navigation from "./Navigation";
+import Socials from "./Socials";
 import VideoBackground from './VideoBackground';
 
 const Approach = () => {
@@ -7,6 +8,8 @@ const Approach = () => {
     
    
     <section className='App-header' id='approach'>
+      <Navigation />
+        <Socials/>
     <VideoBackground 
     title="APPROACH"
     description="Fusce viverra ipsum eu est convallis bibendum. Donec id nibh orci. Cras eget tellus eu nulla lacinia rhoncus. Donec mattis semper gravida. Donec feugiat!"

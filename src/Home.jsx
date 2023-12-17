@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import RotateBackground from "./RotateBackground";
 import Navigation from "./Navigation";
+import Socials from "./Socials";
 import Mainvideo from "./Mainvideo";
 
 
@@ -23,14 +24,16 @@ const titleStyle = {
 
 const Home = () => {
   return (
-    <section className='App-header' id='home'>
+    
       <>
         <Mainvideo />
+        <Navigation />
+        <Socials/>
         <div style={titleStyle}>
           OUT OF OFFICE&trade;
         </div>
       </>
-    </section>
+    
   );
 };
 

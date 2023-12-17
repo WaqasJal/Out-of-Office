@@ -1,7 +1,8 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+
 import { HashLink as Link } from 'react-router-hash-link';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Work from './Work';
 import Socials from './Socials';
@@ -16,17 +17,15 @@ import Scrollbar from './Scrollbar';
 
 const App = () => {
   return (
-    
     <Router>
-      
-      <Navigation />
-      <Socials/>
-      
-
-      <Home />
-      <Services />
-      <Approach />
-      <Work />
+      <div className="app">
+        <Routes> 
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/approach" element={<Approach/>} />
+        </Routes>
+      </div>
     </Router>
   );
 };
