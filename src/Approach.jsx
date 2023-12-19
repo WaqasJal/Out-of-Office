@@ -1,15 +1,12 @@
-import React from 'react';
+import React from "react";
 import Navigation from "./Navigation";
 import Socials from "./Socials";
-import VideoBackground from './VideoBackground';
+import VideoBackground from "./VideoBackground";
 
 const Approach = () => {
   return (
-
-
-    <section className='App-header' id='approach'>
+    <section className="App-header" id="approach">
       <Navigation />
-      <Socials />
 
       <VideoBackground
         title="Discovery"
@@ -26,12 +23,7 @@ const Approach = () => {
         description="We take your goals and work towards them through various mediums of production."
       />
     </section>
-
-
-
-
   );
-
 };
 
 export default Approach;

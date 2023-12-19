@@ -8,35 +8,29 @@ import Mainvideo from "./Mainvideo";
 import logo from "../src/images/OOOLogo.svg";
 
 const titleStyle = {
-  fontFamily: 'Inter  , sans-serif',
-  fontSize: '200px',
-  color: '#ffffff',
-  textAlign: 'center',
-  fontWeight: 'bold',
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '100%',
-  mixBlendMode: 'difference', // Use mix-blend-mode to invert the text color based on the background
-  filter: 'invert(30%)',
+  fontFamily: "Inter  , sans-serif",
+  fontSize: "200px",
+  color: "#ffffff",
+  textAlign: "center",
+  fontWeight: "bold",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "100%",
+  mixBlendMode: "difference", // Use mix-blend-mode to invert the text color based on the background
+  filter: "invert(30%)",
 };
 
 const Home = () => {
   return (
-    
-      <>
-      
-        <Mainvideo />
-        
-        <Navigation />
-        
-        <Socials/>
-        <div style={titleStyle}>
-          OUT OF OFFICE&trade;
-        </div>
-      </>
-    
+    <>
+      <Mainvideo />
+
+      <Navigation />
+
+      <div style={titleStyle}>OUT OF OFFICE&trade;</div>
+    </>
   );
 };
 
