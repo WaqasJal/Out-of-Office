@@ -26,7 +26,7 @@ const Mainvideo = () => {
               animate={{ rotate: 360 }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
             >
-              <img src={logo} alt="Company Logo" className="logo" />
+              <img src={logo} alt="Company Logo"  />
             </motion.div>
           </div>
         </Link>

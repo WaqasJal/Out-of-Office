@@ -16,8 +16,9 @@ const titleStyle = {
   position: "absolute",
   top: "50%",
   left: "50%",
-  transform: "translate(-50%, -50%)",
   width: "100%",
+  transform: "translate(-50%, -50%)",
+  flexwrap: "wrap", /* Allow items to wrap on smaller screens */
   mixBlendMode: "difference", // Use mix-blend-mode to invert the text color based on the background
   filter: "invert(30%)",
 };
