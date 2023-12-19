@@ -14,9 +14,18 @@ import { ContactUs } from './ContactUs';
 import logo from './images/Services.jpg';
 import './App.css'; // Import your global CSS file
 import Scrollbar from './Scrollbar';
+import { Helmet } from 'react-helmet';
 
 const App = () => {
   return (
+    <div>
+      <Helmet>
+      <link
+    rel="icon"
+    type="image/gif"
+    href="public\ooo.gif"
+  />
+      </Helmet>
     <Router>
       <div className="app">
         <Routes> 
@@ -27,6 +36,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    </div>
   );
 };
 

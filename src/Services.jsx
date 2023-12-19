@@ -14,13 +14,13 @@ const Services = () => {
   
     {/* Include the Approach component */}
     <VideoBackground 
-    title="SERVICES"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet cursus lacus at eleifend. Ut sit amet erat non est mollis volutpat. Morbi rutrum eleifend urna, at luctus libero molestie nec. Morbi mollis, ex vel laoreet auctor, neque lacus aliquam ex, vel hendrerit ipsum risus vitae eros. "
+    title="Brand Strategy"
+    description="Authentic brands always win. We help you sculpt your purpose, values, narrative and core creative identity. When we're done, you will be sought."
     />
     {/* You can include multiple instances of the Approach component if needed */}
     <VideoBackground 
-    title="MORE"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet cursus lacus at eleifend.  "
+    title="Story through video"
+    description="Video tells a story. We harness the power of video to bring out the impact of your brand through visual."
     />
     {/* You can include multiple instances of the Approach component if needed */}
     

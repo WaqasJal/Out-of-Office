@@ -5,17 +5,28 @@ import VideoBackground from './VideoBackground';
 
 const Approach = () => {
   return (
-    
-   
+
+
     <section className='App-header' id='approach'>
       <Navigation />
-        <Socials/>
-    <VideoBackground 
-    title="APPROACH"
-    description="Fusce viverra ipsum eu est convallis bibendum. Donec id nibh orci. Cras eget tellus eu nulla lacinia rhoncus. Donec mattis semper gravida. Donec feugiat!"
-    />
-   </section>
-    
+      <Socials />
+
+      <VideoBackground
+        title="Discovery"
+        description="We work to explore your unique needs, requirements and goals."
+      />
+
+      <VideoBackground
+        title="Strategy"
+        description="In order to succeed, you need to plan. We make this a collaborative process and give your team the knowledge and tools to build a framework for success."
+      />
+
+      <VideoBackground
+        title="Execute"
+        description="We take your goals and work towards them through various mediums of production."
+      />
+    </section>
+
 
 
 

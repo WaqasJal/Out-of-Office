@@ -11,7 +11,20 @@ import logo from "../src/images/OOOLogo.svg";
 
 const Mainvideo = () => {
   return (
+    
     <div className="bg-custom-background-color relative w-full h-screen navbar scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-500">
+      <div className="p-4 ">
+          <Link to="/">
+            <div className=" flex items-center w-16 h-16 fixed z-10">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              >
+                <img src={logo} alt="Company Logo" className="logo" />
+              </motion.div>
+            </div>
+          </Link>
+        </div>
       <video className="absolute w-full h-screen inset-0 object-cover opacity-100" autoPlay loop muted>
         <source src={mainv} type="video/mp4" />
       </video>

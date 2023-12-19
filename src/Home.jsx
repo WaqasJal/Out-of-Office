@@ -5,10 +5,10 @@ import RotateBackground from "./RotateBackground";
 import Navigation from "./Navigation";
 import Socials from "./Socials";
 import Mainvideo from "./Mainvideo";
-
+import logo from "../src/images/OOOLogo.svg";
 
 const titleStyle = {
-  fontFamily: 'Tahoma  , sans-serif',
+  fontFamily: 'Inter  , sans-serif',
   fontSize: '200px',
   color: '#ffffff',
   textAlign: 'center',
@@ -26,8 +26,11 @@ const Home = () => {
   return (
     
       <>
+      
         <Mainvideo />
+        
         <Navigation />
+        
         <Socials/>
         <div style={titleStyle}>
           OUT OF OFFICE&trade;

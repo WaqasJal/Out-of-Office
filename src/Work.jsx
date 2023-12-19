@@ -9,8 +9,17 @@ const Work = () => {
       <Navigation />
         <Socials/>
     <VideoBackground 
-    title="WORK"
-    description="i, aliquam convallis turpis. Nunc et sem tempus, hendrerit arcu in, laoreet risus. Morbi ut metus tristique, venenatis ante ut"
+    title="corporate"
+    description="Brands that inspire people to act."
+    />
+    {/* Include the Approach component */}
+    <VideoBackground 
+    title="Social Good"
+    description="Helping you close the trust gap."
+    />
+    <VideoBackground 
+    title="Personalities"
+    description="Elevating your greatness."
     />
     </section>
 
