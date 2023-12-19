@@ -53,6 +53,12 @@ const Mainvideo = () => {
           </Link>
         </div>
       </div>
+      {/* Bottom left text */}
+      <div className="absolute bottom-0 left-0 p-4 inline-flex items-center justify-end gap-[18px] opacity-70">
+        <div className="relative w-fit  font-normal text-white text-24 tracking-0 leading-normal">
+          OUT OF OFFICE ™
+        </div>
+      </div>
       {/* Bottom right icons */}
       <div className="fixed bottom-0 right-0 p-4 z-10">
         <div className="inline-flex items-center justify-end gap-[18px] relative">
