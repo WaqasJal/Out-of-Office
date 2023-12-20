@@ -44,10 +44,38 @@
   border: none !important;
 }
 
-@media (max-width: 768px) {
-  /* Adjust styling for smaller screens */
+
+@media (max-width: 1024px) {
+  /* Styles for medium-sized screens */
   .top-nav ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
+    font-size: 12px; /* Font size for medium screens */
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+  .top-nav ul {
+
+   
+    margin-left: 100px; /* Adjust spacing between items */
+    
+    
+  }
+  
+  .top-nav ul li {
+    font-size: 10px;
+    letter-spacing: -1px; /* Decrease letter spacing */
+   
+  }
+  
+
+  
+  .top-nav ul li a:hover {
+    background-color: #ffffff00;
+    color: #fffcfc;
+  }
+  
+  .top-nav ul li a {
+    border: none !important;
   }
 }
