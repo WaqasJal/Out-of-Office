@@ -3,11 +3,11 @@ import Mainvideo from "./Mainvideo";
 import Navigation from "./Navigation";
 
 const Home = () => {
-  const [titleFontSize, setTitleFontSize] = useState("200px");
+  const [titleFontSize, setTitleFontSize] = useState("190px");
 
   useEffect(() => {
     const handleResize = () => {
-      const newFontSize = window.innerWidth > 768 ? "90px" : "50px";
+      const newFontSize = window.innerWidth > 768 ? "90px" : "47px";
       setTitleFontSize(newFontSize);
     };
 
