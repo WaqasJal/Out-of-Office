@@ -1,36 +1,48 @@
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
-import RotateBackground from "./RotateBackground";
-import Navigation from "./Navigation";
-import Socials from "./Socials";
 import Mainvideo from "./Mainvideo";
-import logo from "../src/images/OOOLogo.svg";
-
-const titleStyle = {
-  fontFamily: "Inter  , sans-serif",
-  fontSize: "200px",
-  color: "#ffffff",
-  textAlign: "center",
-  fontWeight: "bold",
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  width: "100%",
-  transform: "translate(-50%, -50%)",
-  flexwrap: "wrap", /* Allow items to wrap on smaller screens */
-  mixBlendMode: "difference", // Use mix-blend-mode to invert the text color based on the background
-  filter: "invert(30%)",
-};
+import Navigation from "./Navigation";
 
 const Home = () => {
+  const [titleFontSize, setTitleFontSize] = useState("200px");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newFontSize = window.innerWidth > 768 ? "90px" : "50px";
+      setTitleFontSize(newFontSize);
+    };
+
+    handleResize(); // Initial call to set the font size based on the screen width
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const titleStyle = {
+    fontFamily: "Inter, sans-serif",
+    fontSize: titleFontSize,
+    color: "#ffffff",
+    textAlign: "center",
+    fontWeight: "bold",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    width: "100%",
+    transform: "translate(-50%, -50%)",
+    whiteSpace: "nowrap",
+    mixBlendMode: "difference",
+    filter: "invert(30%)",
+  };
+
   return (
     <>
       <Mainvideo />
-
       <Navigation />
-
-      <div style={titleStyle}>OUT OF OFFICE&trade;</div>
+      <div className='text-xl md:text-4xl lg:text-3xl' style={titleStyle}>
+        OUT OF OFFICE&trade;
+      </div>
     </>
   );
 };
