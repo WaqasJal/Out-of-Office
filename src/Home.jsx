@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const newFontSize = window.innerWidth > 768 ? "90px" : "45px";
+      const newFontSize = window.innerWidth > 768 ? "90px" : "50px";
       setTitleFontSize(newFontSize);
     };
 
@@ -40,7 +40,7 @@ const Home = () => {
     <>
       <Mainvideo />
       <Navigation />
-      <div className='text-xl md:text-4xl lg:text-3xl' style={titleStyle}>
+      <div className="text-xl md:text-4xl lg:text-3xl" style={titleStyle}>
         OUT OF OFFICE&trade;
       </div>
     </>
