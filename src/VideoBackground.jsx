@@ -23,6 +23,8 @@ function VideoBackground({ title, description, videoUrl }) {
       autoPlay
       loop
       muted
+      playsInline
+    controls={false} // Set controls to false to hide the default video controls
     >
       <source src={VideoApproach3} type="video/mp4" />
     </video>

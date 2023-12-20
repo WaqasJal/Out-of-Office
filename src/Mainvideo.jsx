@@ -29,18 +29,20 @@ const Mainvideo = () => {
               animate={{ rotate: 360 }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
             >
-              <img src={logo} alt="Company Logo"  />
+              <img src={logo} alt="Company Logo" />
             </motion.div>
           </div>
         </Link>
       </div>
 
-      
+
       <video
         className="absolute w-full h-screen inset-0 object-cover opacity-100"
         autoPlay
         loop
         muted
+        playsInline
+        controls={false} // Set controls to false to hide the default video controls
       >
         <source src={mainv} type="video/mp4" />
       </video>
