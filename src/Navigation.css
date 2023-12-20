@@ -10,11 +10,14 @@
   z-index: 3000;
   display: flex;
   justify-content: space-around;
+  /*justify-content: space-between; this fixes the movement between home and othre pages but will un-center the navbar */
   align-items: center;
   mix-blend-mode: screen;
   filter: invert(80%);
-  font-family: 'Inter', sans-serif; /* Updated font-family */
-  letter-spacing: 11.21px; /* Changed to tracking-[11.21px] *
+  font-family: 'Inter', 'sans-serif';
+  letter-spacing: 2px;
+ /* font-family: 'Inter', sans-serif;  Updated font-family */
+  /* letter-spacing: 9.21px; /* Changed to tracking-[11.21px] * */
   transition: transform 0.3s ease;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
@@ -22,7 +25,7 @@
 .top-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   display: flex;
 }
 
