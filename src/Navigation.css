@@ -13,8 +13,8 @@
   align-items: center;
   mix-blend-mode: screen;
   filter: invert(80%);
-  font-family: 'Tahoma', 'sans-serif';
-  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif; /* Updated font-family */
+  letter-spacing: 11.21px; /* Changed to tracking-[11.21px] *
   transition: transform 0.3s ease;
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
@@ -32,7 +32,7 @@
 }
 
 .top-nav ul li:not(:last-child) {
-  margin-right: 20px; /* Adjust spacing between items */
+  margin-right: 25px; /* Adjust spacing between items */
 }
 
 .top-nav ul li a:hover {

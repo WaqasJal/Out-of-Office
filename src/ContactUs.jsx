@@ -29,25 +29,25 @@ export const ContactUs = () => {
 
   return (
     <div className="bg-[#0d1418] w-full h-screen flex flex-col justify-center items-center">
-    <Link to="/">
-      <div className="flex items-center w-16 h-16 fixed z-10 mt-4 ml-4">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-        >
-          <img src={logo} alt="Company Logo" className="logo" />
-        </motion.div>
-      </div>
-    </Link>
+      <Link to="/">
+        <div className="flex items-center w-16 h-16 fixed z-10 mt-4 ml-4">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+          >
+            <img src={logo} alt="Company Logo" className="logo" />
+          </motion.div>
+        </div>
+      </Link>
 
-    <p className="text-white text-4xl px-4 md:text-5xl font-thin font-Inter mt-8 md:mt-0 md:ml-4 w-full md:w-auto text-left">
-  Make your vision a reality.
-</p>
+      <p className="text-white text-4xl px-4 md:text-5xl font-thin font-Inter mt-8 md:mt-0 md:ml-4 w-full md:w-auto text-left">
+        Make your vision a reality.
+      </p>
 
-    <section className="text-gray-700 body-font md:w-1/2 md:self-center md:mr-4 p-4 md:p-0">
-      <div className="flex flex-col text-center w-full mb-12"></div>
-      <div className="lg:w-1/2 md:w-full mx-auto">
-        <div className="flex flex-wrap -m-2">
+      <section className="text-gray-700 body-font md:w-1/2 w-full md:self-center md:mr-4 p-4 md:p-0">
+        <div className="flex flex-col text-center w-full mb-12 "></div>
+        <div className="lg:w-1/2 md:w-full mx-auto">
+          <div className="flex flex-wrap -m-2">
             <div className="p-2 w-full md:w-1/2">
               <div className="relative">
                 <label
@@ -119,7 +119,9 @@ export const ContactUs = () => {
                 ></textarea>
               </div>
             </div>
-            <div className="p-2 w-full flex justify-end md:justify-start mt-4"> {/* Positioned at the bottom right */}
+            <div className="p-2 w-full flex justify-end md:justify-start mt-4">
+              {" "}
+              {/* Positioned at the bottom right */}
               <button
                 className="text-white border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 style={{
