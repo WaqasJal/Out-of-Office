@@ -86,14 +86,14 @@
 
 
   .top-nav ul {
-    margin-left: 150px; /* Adjust spacing between items */
+    margin-left: 160px; /* Adjust spacing between items */
     
   }
   
   .top-nav ul li {
     font-size: 10px;
     letter-spacing: 0px; /* Decrease letter spacing */
-    padding-left: 15px;
+    padding-left: 7px;
   }
   
   .top-nav ul li a:hover {
