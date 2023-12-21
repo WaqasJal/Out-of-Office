@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      const newFontSize = window.innerWidth > 768 ? "90px" : "47px";
+      const newFontSize = window.innerWidth > 768 ? "90px" : "30px";
       setTitleFontSize(newFontSize);
     };
 
