@@ -9,9 +9,6 @@ const Navigation = () => {
     <nav className="top-nav">
       <ul>
         <li>
-          <Link to={`/`}>{"HOME"}</Link>
-        </li>
-        <li>
           <Link to={`/work`}>{"WORK"}</Link>
         </li>
         <li>

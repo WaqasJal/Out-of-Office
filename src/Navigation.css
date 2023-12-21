@@ -31,11 +31,11 @@
 
 .top-nav ul li {
   font-size: 20px;
-  margin-right: 20px; /* Adjust spacing between items */
+  margin-right: 90px; /* Adjust spacing between items */
 }
 
 .top-nav ul li:not(:last-child) {
-  margin-right: 25px; /* Adjust spacing between items */
+  margin-right: 5px; /* Adjust spacing between items */
 }
 
 .top-nav ul li a:hover {
@@ -50,28 +50,25 @@
 
 @media (max-width: 1024px) {
   /* Styles for medium-sized screens */
-  .top-nav ul li {
-    font-size: 12px; /* Font size for medium screens */
-  }
-}
+  /* .top-nav ul li {
+    top: 20px;
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    padding-left: 25px;
+    align-items: center;
+  } */
 
-/* Styles for small screens */
-@media (max-width: 768px) {
   .top-nav ul {
-
-   
     margin-left: 100px; /* Adjust spacing between items */
     
-    
   }
   
   .top-nav ul li {
-    font-size: 10px;
-    letter-spacing: -1px; /* Decrease letter spacing */
-   
+    font-size: 16px;
+    letter-spacing: 0px; /* Decrease letter spacing */
+    padding-left: 25px;
   }
-  
-
   
   .top-nav ul li a:hover {
     background-color: #ffffff00;
@@ -80,5 +77,32 @@
   
   .top-nav ul li a {
     border: none !important;
+    
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+
+
+  .top-nav ul {
+    margin-left: 150px; /* Adjust spacing between items */
+    
+  }
+  
+  .top-nav ul li {
+    font-size: 10px;
+    letter-spacing: 0px; /* Decrease letter spacing */
+    padding-left: 15px;
+  }
+  
+  .top-nav ul li a:hover {
+    background-color: #ffffff00;
+    color: #fffcfc;
+  }
+  
+  .top-nav ul li a {
+    border: none !important;
+    
   }
 }

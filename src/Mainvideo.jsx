@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import logo from "../src/images/OOOLogo.svg";
 
 const Mainvideo = () => {
-
   const envelopeUrl =
     "https://i.gyazo.com/3026017ee3360fed38839cbdeae666cb.png";
 
@@ -18,7 +17,6 @@ const Mainvideo = () => {
     "https://i.gyazo.com/4ac32b19416a2e0be19f1873324801e0.png";
 
   const instagramProfileUrl = "https://www.instagram.com/outofofficeoriginal/";
-
 
   return (
     <div className="bg-custom-background-color relative w-full h-screen navbar scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-500">
@@ -34,7 +32,6 @@ const Mainvideo = () => {
           </div>
         </Link>
       </div>
-
 
       <video
         className="absolute w-full h-screen inset-0 object-cover opacity-100"
