@@ -30,7 +30,7 @@ function VideoBackground({ title, description, videoUrl }) {
       </video>
       <div className="p-4">
         <Link to="/">
-          <div className="flex items-center w-16 h-16 fixed z-10">
+          <div className=" flex items-center w-16 h-16 fixed z-10">
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
@@ -40,11 +40,11 @@ function VideoBackground({ title, description, videoUrl }) {
           </div>
         </Link>
       </div>
-      <div className="absolute top-1/2 transform lg:mt-[-350px] left-8 text-left mt-[-300px] md:mt-[-200px] ">
-        <h1 className="py-4 text-white font-bold text-2xl mb-2 md:mb-4 px-1 md:py-16 max-w-md md:max-w-2xl text-white text-3xl md:text-2xl lg:text-xl font-bold font-['Inter'] uppercase tracking-[11.21px]">
+      <div className="absolute top-1/2 transform lg:mt-[-350px] left-4 text-left mt-[-300px] md:mt-[-200px] ">
+        <h1 className="py-24 text-white font-bold text-xl mb-2 md:mb-4  md:py-16 max-w-md md:max-w-2xl text-white text-3xl md:text-2xl lg:text-xl font-bold font-['Inter'] uppercase tracking-[11.21px]">
           {title}
         </h1>
-        <div className="lg:mt-[-50px] py-40 text-white text-opacity-75 text-4xl md:text-4xl lg:text-4xl px-1 py-8 md:py-8 max-w-md md:max-w-2xl text-white font-thin font-['Inter'] whitespace-normal">
+        <div className="lg:mt-[-50px]  text-white text-opacity-75 text-3xl md:text-4xl lg:text-4xl  mt-[-50px] md:py-8 max-w-md md:max-w-2xl text-white font-thin font-['Inter'] whitespace-normal">
           {description}
         </div>
       </div>
