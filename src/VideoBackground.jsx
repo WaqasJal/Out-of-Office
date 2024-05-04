@@ -4,7 +4,7 @@ import React, { useState, Text, StyleSheet } from "react";
 //import tailwind from 'tailwind';
 import { motion } from "framer-motion";
 import VideoApproach3 from "../src/videos/VideoApproach3.mp4";
-import VideoApproach2 from "../src/videos/VideoApproach2.mp4";
+
 import { Link } from "react-router-dom";
 import logo from "../src/images/OOOLogo.svg";
 

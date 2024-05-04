@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-import Socials from "./Socials";
+
 import VideoBackground from "./VideoBackground";
 
 const Work = () => {
