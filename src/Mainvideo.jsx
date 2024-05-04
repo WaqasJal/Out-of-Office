@@ -1,4 +1,4 @@
-import React, { useState, Text, StyleSheet } from "react";
+import React from "react";
 
 //import './ApproachStyle.css'; // Import the CSS file
 //import tailwind from 'tailwind';

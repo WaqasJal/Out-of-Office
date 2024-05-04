@@ -11,11 +11,6 @@ export const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
